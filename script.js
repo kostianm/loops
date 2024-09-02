@@ -6,6 +6,18 @@
 
 /*2. Написати функцію, яка запитує через prompt пароль користувача, порівнює його з тим, який у неї збережений (захардкоджений у константі). Якщо пароль співпав - виводить на консоль “Ви успішно увійшли в систему”, якщо ні - продовжує запитувати пароль і перевіряти, поки не введуть правильно (за допомогою вічного цикла) */
 
+const TRUE_PASSWORD = 'qwerty123'
+
+
+function passwordCheckout() {
+  let password
+  while (password !== TRUE_PASSWORD) {
+    password = prompt('Please enter password')
+  }
+  console.log('Ви успішно увійшли в систему')
+}
+passwordCheckout()
+
 //3. Обчислити сумму чисел від 1 до 100 і вивести її в консоль
 
 // let sum = 0
@@ -69,20 +81,20 @@
 /*7. Задачка з *: Зробити квадрат зі зворотньою діагоналлю (з правого верхнього до лівого нижнього)
  */
 
-let side = 9;
-let pattern = "";
+// let side = 9;
+// let pattern = "";
 
-for (let n = 1; n <= side; n++) {
-  for (let num = 1; num <= side; num++) {
-    if (n == 1 || n == side) pattern += "*";
-    else {
-      if (num == 1 || num == side || (n + num) == (side+1)) {
-        pattern += "*";
-      } else {
-        pattern += " ";
-      }
-    }
-  }
-  pattern += "\n";
-}
-console.log(pattern);
+// for (let n = 1; n <= side; n++) {
+//   for (let num = 1; num <= side; num++) {
+//     if (n == 1 || n == side) pattern += "*";
+//     else {
+//       if (num == 1 || num == side || (n + num) == (side+1)) {
+//         pattern += "*";
+//       } else {
+//         pattern += " ";
+//       }
+//     }
+//   }
+//   pattern += "\n";
+// }
+// console.log(pattern);
